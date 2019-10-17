@@ -12,9 +12,13 @@
 		34A67039235742360000A155 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34A67037235742360000A155 /* Main.storyboard */; };
 		34A6703B235742360000A155 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34A6703A235742360000A155 /* Assets.xcassets */; };
 		34A6703E235742360000A155 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34A6703C235742360000A155 /* LaunchScreen.storyboard */; };
+		34A670462357E6910000A155 /* resultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A670452357E6910000A155 /* resultViewController.swift */; };
+		633923AC4FDD1FA7CA62C26D /* Pods_FinalKadai.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBF1CA735CFDC3930B0BC20 /* Pods_FinalKadai.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FBF1CA735CFDC3930B0BC20 /* Pods_FinalKadai.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinalKadai.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20A1ED514988191A5D48A065 /* Pods-FinalKadai.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalKadai.debug.xcconfig"; path = "Target Support Files/Pods-FinalKadai/Pods-FinalKadai.debug.xcconfig"; sourceTree = "<group>"; };
 		34A67030235742360000A155 /* FinalKadai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalKadai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34A67033235742360000A155 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34A67035235742360000A155 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		34A6703A235742360000A155 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34A6703D235742360000A155 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34A6703F235742360000A155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34A670452357E6910000A155 /* resultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resultViewController.swift; sourceTree = "<group>"; };
+		C8B3118E47B20E848C8419B9 /* Pods-FinalKadai.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalKadai.release.xcconfig"; path = "Target Support Files/Pods-FinalKadai/Pods-FinalKadai.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				633923AC4FDD1FA7CA62C26D /* Pods_FinalKadai.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				34A67032235742360000A155 /* FinalKadai */,
 				34A67031235742360000A155 /* Products */,
+				6F543BAB25003F5C1787F6CD /* Pods */,
+				6D27DDFF548B9C1919211475 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +69,27 @@
 				34A6703A235742360000A155 /* Assets.xcassets */,
 				34A6703C235742360000A155 /* LaunchScreen.storyboard */,
 				34A6703F235742360000A155 /* Info.plist */,
+				34A670452357E6910000A155 /* resultViewController.swift */,
 			);
 			path = FinalKadai;
+			sourceTree = "<group>";
+		};
+		6D27DDFF548B9C1919211475 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FBF1CA735CFDC3930B0BC20 /* Pods_FinalKadai.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F543BAB25003F5C1787F6CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20A1ED514988191A5D48A065 /* Pods-FinalKadai.debug.xcconfig */,
+				C8B3118E47B20E848C8419B9 /* Pods-FinalKadai.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 34A67042235742360000A155 /* Build configuration list for PBXNativeTarget "FinalKadai" */;
 			buildPhases = (
+				7DF91CADB62A8E0465CC9F53 /* [CP] Check Pods Manifest.lock */,
 				34A6702C235742350000A155 /* Sources */,
 				34A6702D235742350000A155 /* Frameworks */,
 				34A6702E235742350000A155 /* Resources */,
+				71765AE93ADF246834530519 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,11 +160,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		71765AE93ADF246834530519 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinalKadai/Pods-FinalKadai-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinalKadai/Pods-FinalKadai-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FinalKadai/Pods-FinalKadai-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DF91CADB62A8E0465CC9F53 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FinalKadai-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		34A6702C235742350000A155 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34A670462357E6910000A155 /* resultViewController.swift in Sources */,
 				34A67036235742360000A155 /* ViewController.swift in Sources */,
 				34A67034235742360000A155 /* AppDelegate.swift in Sources */,
 			);
@@ -280,6 +353,7 @@
 		};
 		34A67043235742360000A155 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20A1ED514988191A5D48A065 /* Pods-FinalKadai.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -292,12 +366,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "jose-asia.FinalKadai";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		34A67044235742360000A155 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8B3118E47B20E848C8419B9 /* Pods-FinalKadai.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -310,7 +385,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "jose-asia.FinalKadai";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
