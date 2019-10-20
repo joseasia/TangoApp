@@ -1,5 +1,5 @@
 //
-//  resultViewController.swift
+//  ResultViewController.swift
 //  FinalKadai
 //
 //  Created by 佐藤　由羽太 on 2019/10/17.
@@ -8,26 +8,21 @@
 
 import UIKit
 
-class resultViewController: UIViewController {
+class ResultViewController: UIViewController {
     
     @IBOutlet weak var wordLabel1: UILabel!
     @IBOutlet weak var wordLabel2: UILabel!
     
+    
+    var task:Task!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        wordLabel1.text = task.word1
+        wordLabel2.text = task.word2
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

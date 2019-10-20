@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		34A6703B235742360000A155 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34A6703A235742360000A155 /* Assets.xcassets */; };
 		34A6703E235742360000A155 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34A6703C235742360000A155 /* LaunchScreen.storyboard */; };
 		34A670462357E6910000A155 /* resultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A670452357E6910000A155 /* resultViewController.swift */; };
+		34A670482357ECD50000A155 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A670472357ECD50000A155 /* Word.swift */; };
+		34A6704A235ADBDC0000A155 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A67049235ADBDC0000A155 /* InputViewController.swift */; };
 		633923AC4FDD1FA7CA62C26D /* Pods_FinalKadai.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBF1CA735CFDC3930B0BC20 /* Pods_FinalKadai.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,8 @@
 		34A6703D235742360000A155 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34A6703F235742360000A155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34A670452357E6910000A155 /* resultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resultViewController.swift; sourceTree = "<group>"; };
+		34A670472357ECD50000A155 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		34A67049235ADBDC0000A155 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 		C8B3118E47B20E848C8419B9 /* Pods-FinalKadai.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalKadai.release.xcconfig"; path = "Target Support Files/Pods-FinalKadai/Pods-FinalKadai.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +74,8 @@
 				34A6703C235742360000A155 /* LaunchScreen.storyboard */,
 				34A6703F235742360000A155 /* Info.plist */,
 				34A670452357E6910000A155 /* resultViewController.swift */,
+				34A670472357ECD50000A155 /* Word.swift */,
+				34A67049235ADBDC0000A155 /* InputViewController.swift */,
 			);
 			path = FinalKadai;
 			sourceTree = "<group>";
@@ -88,7 +94,6 @@
 				20A1ED514988191A5D48A065 /* Pods-FinalKadai.debug.xcconfig */,
 				C8B3118E47B20E848C8419B9 /* Pods-FinalKadai.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,6 +213,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				34A670462357E6910000A155 /* resultViewController.swift in Sources */,
+				34A6704A235ADBDC0000A155 /* InputViewController.swift in Sources */,
+				34A670482357ECD50000A155 /* Word.swift in Sources */,
 				34A67036235742360000A155 /* ViewController.swift in Sources */,
 				34A67034235742360000A155 /* AppDelegate.swift in Sources */,
 			);
