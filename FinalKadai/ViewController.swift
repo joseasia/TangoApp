@@ -24,7 +24,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         addButton.setBackgroundColor(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), for: .normal)
-//        addButton.setTitle("+", for: .normal)
         addButton.setTitle("+", for: .normal)
         addButton.sizeToFit()
         
@@ -38,7 +37,7 @@ class ViewController: UIViewController {
         
         if segue.identifier == "commentSegue"{
             
-            let inputViewController:InputViewController = segue.destination as! InputViewController
+            let detailFormViewController:DetailFormViewController = segue.destination as! DetailFormViewController
             
             let task = Task()
             let allTasks = realm.objects(Task.self)
@@ -46,7 +45,7 @@ class ViewController: UIViewController {
                 task.id = allTasks.max(ofProperty: "id")! + 1
             }
             
-            inputViewController.task = task
+            detailFormViewController.task = task
         }
 
  

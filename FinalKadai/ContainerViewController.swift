@@ -74,6 +74,11 @@ class ContainerViewController: UIViewController,UITableViewDelegate,UITableViewD
         let elapseDay = Calendar.current.dateComponents([.day], from: lastDataStartOfDay, to: nowStartOfDay).day!
 
         cell.word2Label.text = "\(elapseDay.description)日前"
+        
+        cell.exampleLavel.text = task.example
+        
+        let image = UIImage(data: Data(base64Encoded: task.imageString,options: .ignoreUnknownCharacters)!)
+        cell.wordImage.image = image
 
 
         //cellの高さを可変にして、テキストを折り返すために設定
@@ -86,14 +91,12 @@ class ContainerViewController: UIViewController,UITableViewDelegate,UITableViewD
         return cell
     }
     
-    
-   
-    
-    
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "cellSegue", sender: nil)
     }
+    
+    
+    
 //
 //
 //    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
@@ -149,7 +152,7 @@ class ContainerViewController: UIViewController,UITableViewDelegate,UITableViewD
         
         if segue.identifier == "commentSegue"{
             
-            let inputViewController:InputViewController = segue.destination as! InputViewController
+            let detailFormViewController:DetailFormViewController = segue.destination as! DetailFormViewController
             
             let task = Task()
             let allTasks = realm.objects(Task.self)
@@ -157,7 +160,7 @@ class ContainerViewController: UIViewController,UITableViewDelegate,UITableViewD
                 task.id = allTasks.max(ofProperty: "id")! + 1
             }
             
-            inputViewController.task = task
+            detailFormViewController.task = task
         }else{
             
             let resultViewController:ResultViewController = segue.destination as! ResultViewController
@@ -294,8 +297,8 @@ class Cell: SwipeTableViewCell {
     
     @IBOutlet var word1Label: UILabel!
     @IBOutlet var word2Label: UILabel!
-    
-    
+    @IBOutlet var exampleLavel: UILabel!
+    @IBOutlet var wordImage: UIImageView!
     
 }
 
