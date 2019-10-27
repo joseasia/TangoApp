@@ -27,6 +27,10 @@ class ViewController: UIViewController {
 //        addButton.setTitle("+", for: .normal)
         addButton.setTitle("+", for: .normal)
         addButton.sizeToFit()
+        
+        navigationController?.navigationBar.barTintColor = .white
+        navigationController?.navigationBar.setValue(true, forKey: "hidesShadow")
+        navigationController?.navigationBar.tintColor = .darkGray
     
     }
     

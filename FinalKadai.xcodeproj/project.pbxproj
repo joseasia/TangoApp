@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		341C99682362BA95004453E6 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341C99672362BA95004453E6 /* Shared.swift */; };
+		341C997423653BAB004453E6 /* DetailFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341C997323653BAB004453E6 /* DetailFormViewController.swift */; };
 		34A67034235742360000A155 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A67033235742360000A155 /* AppDelegate.swift */; };
 		34A67036235742360000A155 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A67035235742360000A155 /* ViewController.swift */; };
 		34A67039235742360000A155 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34A67037235742360000A155 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		1FBF1CA735CFDC3930B0BC20 /* Pods_FinalKadai.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinalKadai.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20A1ED514988191A5D48A065 /* Pods-FinalKadai.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalKadai.debug.xcconfig"; path = "Target Support Files/Pods-FinalKadai/Pods-FinalKadai.debug.xcconfig"; sourceTree = "<group>"; };
 		341C99672362BA95004453E6 /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
+		341C997323653BAB004453E6 /* DetailFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFormViewController.swift; sourceTree = "<group>"; };
 		34A67030235742360000A155 /* FinalKadai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalKadai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34A67033235742360000A155 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34A67035235742360000A155 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,10 +83,11 @@
 				34A6703F235742360000A155 /* Info.plist */,
 				34A670452357E6910000A155 /* resultViewController.swift */,
 				34A670472357ECD50000A155 /* Word.swift */,
-				34A67049235ADBDC0000A155 /* InputViewController.swift */,
 				34A6704D235D26A60000A155 /* ContainerViewController.swift */,
 				34A67071235DDE600000A155 /* TextField.swift */,
 				341C99672362BA95004453E6 /* Shared.swift */,
+				34A67049235ADBDC0000A155 /* InputViewController.swift */,
+				341C997323653BAB004453E6 /* DetailFormViewController.swift */,
 			);
 			path = FinalKadai;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			files = (
 				34A670462357E6910000A155 /* resultViewController.swift in Sources */,
 				34A6704A235ADBDC0000A155 /* InputViewController.swift in Sources */,
+				341C997423653BAB004453E6 /* DetailFormViewController.swift in Sources */,
 				34A670482357ECD50000A155 /* Word.swift in Sources */,
 				34A67072235DDE600000A155 /* TextField.swift in Sources */,
 				34A67036235742360000A155 /* ViewController.swift in Sources */,
@@ -312,6 +316,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -366,6 +371,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
