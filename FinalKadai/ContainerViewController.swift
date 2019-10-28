@@ -35,21 +35,22 @@ class ContainerViewController: UIViewController,UITableViewDelegate,UITableViewD
         tableView.delegate = self
         tableView.dataSource = self
         
-//        //cellの高さを可変にして、テキストを折り返すために設定
-//        tableView.estimatedRowHeight = 60 //見積もり高さ
-//        tableView.rowHeight = UITableView.automaticDimension //自動設定
+        //cellの高さを可変にして、テキストを折り返すために設定
+        tableView.estimatedRowHeight = 60 //見積もり高さ
+        tableView.rowHeight = UITableView.automaticDimension //自動設定
         
 //        view.layoutMargins.left = 32
         
 //        UIImageView.appearance().tintColor = .white
+
         
         
         tableView.reloadData()
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60
-    }
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 90
+//    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -79,12 +80,17 @@ class ContainerViewController: UIViewController,UITableViewDelegate,UITableViewD
         
         let image = UIImage(data: Data(base64Encoded: task.imageString,options: .ignoreUnknownCharacters)!)
         cell.wordImage.image = image
-
-
-        //cellの高さを可変にして、テキストを折り返すために設定
-        cell.textLabel!.numberOfLines = 0 //0に設定
-        cell.textLabel!.lineBreakMode = NSLineBreakMode.byWordWrapping //折り返しアリに設定
         
+        if task.pronounce != ""{
+            cell.pronounceLabel.text = " [\(task.pronounce)]"
+        }else{
+            cell.pronounceLabel.text = ""
+        }
+
+
+//        //cellの高さを可変にして、テキストを折り返すために設定
+//        cell.textLabel!.numberOfLines = 0 //0に設定
+//        cell.textLabel!.lineBreakMode = NSLineBreakMode.byWordWrapping //折り返しアリに設定
         cell.imageView!.contentMode = .scaleAspectFit
 
 
@@ -204,9 +210,13 @@ extension ContainerViewController: SwipeTableViewCellDelegate {
             
             return [read]
         } else {
-            let flag = SwipeAction(style: .default, title: nil, handler: nil)
-            flag.hidesWhenSelected = true
-            configure(action: flag, with: .flag)
+            let flag = SwipeAction(style: .default, title: nil) { action, indexPath in
+            
+                let detailFormViewController = self.storyboard?.instantiateViewController(withIdentifier: "Input") as! DetailFormViewController
+                detailFormViewController.task = self.taskArray[(indexPath.row)]
+                self.present(detailFormViewController, animated: false, completion: nil)
+            }
+                configure(action: flag, with: .flag)
             
             let delete = SwipeAction(style: .destructive, title: nil) { action, indexPath in
                 
@@ -299,6 +309,7 @@ class Cell: SwipeTableViewCell {
     @IBOutlet var word2Label: UILabel!
     @IBOutlet var exampleLavel: UILabel!
     @IBOutlet var wordImage: UIImageView!
+    @IBOutlet weak var pronounceLabel: UILabel!
     
 }
 

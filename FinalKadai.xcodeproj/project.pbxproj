@@ -54,6 +54,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		341955032366D25000385B7F /* 現在未使用 */ = {
+			isa = PBXGroup;
+			children = (
+				34A6703C235742360000A155 /* LaunchScreen.storyboard */,
+				34A67071235DDE600000A155 /* TextField.swift */,
+				34A67049235ADBDC0000A155 /* InputViewController.swift */,
+			);
+			path = "現在未使用";
+			sourceTree = "<group>";
+		};
 		34A67027235742350000A155 = {
 			isa = PBXGroup;
 			children = (
@@ -79,15 +89,13 @@
 				34A67035235742360000A155 /* ViewController.swift */,
 				34A67037235742360000A155 /* Main.storyboard */,
 				34A6703A235742360000A155 /* Assets.xcassets */,
-				34A6703C235742360000A155 /* LaunchScreen.storyboard */,
 				34A6703F235742360000A155 /* Info.plist */,
 				34A670452357E6910000A155 /* resultViewController.swift */,
 				34A670472357ECD50000A155 /* Word.swift */,
 				34A6704D235D26A60000A155 /* ContainerViewController.swift */,
-				34A67071235DDE600000A155 /* TextField.swift */,
 				341C99672362BA95004453E6 /* Shared.swift */,
-				34A67049235ADBDC0000A155 /* InputViewController.swift */,
 				341C997323653BAB004453E6 /* DetailFormViewController.swift */,
+				341955032366D25000385B7F /* 現在未使用 */,
 			);
 			path = FinalKadai;
 			sourceTree = "<group>";

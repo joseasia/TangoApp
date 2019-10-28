@@ -56,13 +56,13 @@ class InputViewController: UIViewController,UITextFieldDelegate {
             try! realm.write {
                 self.task.word1 = wordArray![0]
                 self.task.word2 = wordArray![1]
-                self.task.date = NSDate()
+                self.task.date = Date()
                 self.realm.add(self.task, update: true)
             }
         }else if word != ""{
             try! realm.write {
                 self.task.word1 = word!
-                self.task.date = NSDate()
+                self.task.date = Date()
                 self.realm.add(self.task, update: true)
             }
         }

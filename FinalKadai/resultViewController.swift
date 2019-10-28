@@ -30,25 +30,25 @@ class ResultViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
 
-    @IBAction func tst(_ sender: Any) {
+//    @IBAction func tst(_ sender: Any) {
+////        let text = task.word1
+////
+////        if let language = NSLinguisticTagger.dominantLanguage(for: text) {
+////            let locale = Locale(identifier: "ja_JP")
+////            let languageJa = locale.localizedString(forLanguageCode: language)!
+////            print(languageJa)
+////        } else {
+////            print("Unknown language")
+////        }
 //        let text = task.word1
-//
-//        if let language = NSLinguisticTagger.dominantLanguage(for: text) {
+//        
+//        if text != ""{
+//            let language = NSLinguisticTagger.dominantLanguage(for: text)
 //            let locale = Locale(identifier: "ja_JP")
-//            let languageJa = locale.localizedString(forLanguageCode: language)!
+//            let languageJa = locale.localizedString(forLanguageCode: language!)!
 //            print(languageJa)
-//        } else {
-//            print("Unknown language")
 //        }
-        let text = task.word1
-        
-        if text != ""{
-            let language = NSLinguisticTagger.dominantLanguage(for: text)
-            let locale = Locale(identifier: "ja_JP")
-            let languageJa = locale.localizedString(forLanguageCode: language!)!
-            print(languageJa)
-        }
-    }
+//    }
     
 
     

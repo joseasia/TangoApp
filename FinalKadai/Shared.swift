@@ -42,7 +42,7 @@ enum ActionDescriptor {
         case .read: name = "Read"
         case .unread: name = "Unread"
         case .more: name = "More"
-        case .flag: name = "Flag"
+        case .flag: name = "pen3-1"
         case .trash: name = "Trash"
         }
         

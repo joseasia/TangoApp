@@ -17,7 +17,7 @@ class Task: Object {
     @objc dynamic var pronounce = ""
     
     // 投稿時間 Classes
-    @objc dynamic var date = NSDate()
+    @objc dynamic var date = Date()
     
     //画像String
     @objc dynamic var imageString = ""
