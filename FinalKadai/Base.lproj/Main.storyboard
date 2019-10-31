@@ -1,63 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vB8-25-XXP">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vB8-25-XXP">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15508"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Input View Controller-->
-        <scene sceneID="wYQ-lD-HVT">
-            <objects>
-                <viewController id="BZK-di-b6O" customClass="InputViewController" customModule="FinalKadai" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Wgy-md-l8e"/>
-                        <viewControllerLayoutGuide type="bottom" id="zcQ-I5-sao"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="9A0-Zk-Zsu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H4j-XV-ijv" customClass="TextField" customModule="FinalKadai" customModuleProvider="target">
-                                <rect key="frame" x="20" y="64" width="374" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lac-rx-w8K">
-                                <rect key="frame" x="359" y="67" width="25" height="25"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="2wQ-ib-5L4"/>
-                                    <constraint firstAttribute="width" constant="25" id="EYK-i9-3Fs"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="More-circle"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <gestureRecognizers/>
-                        <constraints>
-                            <constraint firstItem="H4j-XV-ijv" firstAttribute="top" secondItem="Wgy-md-l8e" secondAttribute="bottom" constant="20" id="1PS-kh-Y7R"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="lac-rx-w8K" secondAttribute="trailing" constant="10" id="PVq-R2-avB"/>
-                            <constraint firstItem="H4j-XV-ijv" firstAttribute="leading" secondItem="9A0-Zk-Zsu" secondAttribute="leading" constant="20" id="U46-9H-cl6"/>
-                            <constraint firstAttribute="trailing" secondItem="H4j-XV-ijv" secondAttribute="trailing" constant="20" id="YOs-d3-vZP"/>
-                            <constraint firstItem="lac-rx-w8K" firstAttribute="top" secondItem="Wgy-md-l8e" secondAttribute="bottom" constant="23" id="jbI-aC-dmk"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="textField" destination="H4j-XV-ijv" id="q40-d9-7v5"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fgV-1n-3yq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="253.62318840579712" y="823.66071428571422"/>
-        </scene>
         <!--Detail Form View Controller-->
         <scene sceneID="7or-su-tv2">
             <objects>
-                <viewController storyboardIdentifier="Input" id="8MO-sc-Hap" customClass="DetailFormViewController" customModule="FinalKadai" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Input" modalPresentationStyle="fullScreen" id="8MO-sc-Hap" customClass="DetailFormViewController" customModule="FinalKadai" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RBb-uH-vJQ"/>
                         <viewControllerLayoutGuide type="bottom" id="EaU-or-2GW"/>
@@ -90,17 +42,17 @@
                         <viewControllerLayoutGuide type="bottom" id="hUn-zm-nmc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0vG-4G-K2z">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="764"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWn-iF-Kza">
-                                <rect key="frame" x="186" y="124" width="42" height="21"/>
+                                <rect key="frame" x="186" y="80" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSd-Nw-irx">
-                                <rect key="frame" x="186" y="225" width="42" height="21"/>
+                                <rect key="frame" x="186" y="181" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -185,7 +137,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Bfe-JT-yW8">
-                                <rect key="frame" x="0.0" y="44" width="414" height="740"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="774"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="100" id="Z6g-SX-qM7" customClass="Cell" customModule="FinalKadai" customModuleProvider="target">
@@ -278,7 +230,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="More-circle" width="50" height="50"/>
         <image name="gollira" width="350" height="526"/>
     </resources>
 </document>

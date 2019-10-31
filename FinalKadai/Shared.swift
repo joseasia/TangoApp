@@ -100,6 +100,28 @@ enum ActionDescriptor {
     }
 }
 
+func circularIcon(with color: UIColor, size: CGSize, icon: UIImage? = nil) -> UIImage? {
+    let rect = CGRect(origin: .zero, size: size)
+    UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
+
+    UIBezierPath(ovalIn: rect).addClip()
+
+    color.setFill()
+    UIRectFill(rect)
+
+    if let icon = icon {
+        let iconRect = CGRect(x: (rect.size.width - icon.size.width) / 2,
+                              y: (rect.size.height - icon.size.height) / 2,
+                              width: icon.size.width,
+                              height: icon.size.height)
+        icon.draw(in: iconRect, blendMode: .normal, alpha: 1.0)
+    }
+
+    defer { UIGraphicsEndImageContext() }
+
+    return UIGraphicsGetImageFromCurrentImageContext()
+}
+
 enum ButtonDisplayMode {
     case titleAndImage, titleOnly, imageOnly
 }
